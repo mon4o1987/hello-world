@@ -1,0 +1,50 @@
+<body class="">
+	<div class="wrapper">
+		<div class="main-container">
+			<div class="head-inner">
+				<div class="head-container">
+					<a href="/" class="header-logo">
+						<img src="./images/logo.png" alt="" srcset="./images/logo.png 435w, ./images/logo.png 593w" class="main-logo">
+					</a>
+					<div id="header-bar">
+						<div id="header-container">
+							<a href="http://furystudio.com/" title="Fury Studio" target="_blank"><img id="furystudio_logo" src="./images/furystudio_logo.png"></a>
+							<ul class="languages">
+							    <li <?php if ($_SESSION['language'] == 'bg'): ?>class="active"<?php endif; ?>>
+									<a href="/?language=en">EN</a>
+								</li>
+							    <li <?php if ($_SESSION['language'] == 'en'): ?>class="active"<?php endif; ?>>
+									<a href="/?language=bg">BG</a>
+								</li>
+							</ul>
+							<ul class="header-bar-links">
+								<li><a href="http://forum.ragewar.com/" target="_blank"><?=LANG_FORUM?></a></li>
+								<li><a href="mailto:support@furystudio.com"><?=LANG_SUPPORT?></a></li>
+							</ul>							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-inner-area">
+				<div class="content-inner">
+					<div id="download-area">
+						<h1><?=LANG_DONWLOAND_PC_MAC?></h1>
+						<div id="separator_img">
+							<img src="./images/separator.png">
+						</div>
+						<div id="download-container">
+							<div class="download-coloumn">
+								<img src="./images/windows-icon.png" class="windows-img">
+								<h3 class="version">Ragewar Windows</h3>
+								<a href="http://apps.ragewar.com/ragewar_win.zip" class="input-submit" id="download_win_app_btn"><span class="messages-text"><?=LANG_DOWNLOAD?></span></a>
+							</div>
+							<div class="download-coloumn">
+								<img src="./images/apple-icon.png" class="apple-img">
+								<h3 class="version">Ragewar Mac OS</h3>
+								<a href="http://apps.ragewar.com/ragewar_mac.zip" class="input-submit" id="download_mac_app_btn"><span class="messages-text"><?=LANG_DOWNLOAD?></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
